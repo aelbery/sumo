@@ -958,6 +958,11 @@ TRACI_CONST int VAR_IMPERFECTION = 0x5d;
 // speed factor (set: vehicle)
 TRACI_CONST int VAR_SPEED_FACTOR = 0x5e;
 
+///////////////////////////////////
+// CV leader Speed (set: vehicle)
+TRACI_CONST int VAR_CV_LEADER_SPEED = 0xf0;
+
+
 // speed deviation (set: vehicle)
 TRACI_CONST int VAR_SPEED_DEVIATION = 0x5f;
 

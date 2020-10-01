@@ -29,6 +29,7 @@ static double getLength(const std::string& typeID); \
 static double getMaxSpeed(const std::string& typeID); \
 static double getActionStepLength(const std::string& typeID); \
 static double getSpeedFactor(const std::string& typeID); \
+static double getCVLeaderSpeed(const std::string& typeID); \
 static double getSpeedDeviation(const std::string& typeID); \
 static double getAccel(const std::string& typeID); \
 static double getDecel(const std::string& typeID); \
@@ -53,6 +54,7 @@ static void setLength(const std::string& typeID, double length); \
 static void setMaxSpeed(const std::string& typeID, double speed); \
 static void setVehicleClass(const std::string& typeID, const std::string& clazz); \
 static void setSpeedFactor(const std::string& typeID, double factor); \
+static void setCVLeaderSpeed(const std::string& typeID, double lspeed); \
 static void setEmissionClass(const std::string& typeID, const std::string& clazz); \
 static void setShapeClass(const std::string& typeID, const std::string& shapeClass); \
 static void setWidth(const std::string& typeID, double width); \

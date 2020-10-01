@@ -578,6 +578,12 @@ Vehicle::getSpeedFactor(const std::string& vehicleID) {
 }
 
 
+double
+Vehicle::getCVLeaderSpeed(const std::string& vehicleID) {
+    return Helper::getVehicle(vehicleID)->getCVLeaderSpeed();
+}
+
+
 int
 Vehicle::getSpeedMode(const std::string& vehicleID) {
     MSBaseVehicle* veh = Helper::getVehicle(vehicleID);
@@ -1697,6 +1703,13 @@ Vehicle::setSpeedFactor(const std::string& vehicleID, double factor) {
 }
 
 
+///////////////////////////////////////
+void
+Vehicle::setCVLeaderSpeed(const std::string& vehicleID, double lspeed) {
+    Helper::getVehicle(vehicleID)->setCVLeaderSpeed(lspeed);
+}
+
+
 void
 Vehicle::setLine(const std::string& vehicleID, const std::string& line) {
     Helper::getVehicle(vehicleID)->getParameter().line = line;
@@ -2201,6 +2214,9 @@ Vehicle::handleVariable(const std::string& objID, const int variable, VariableWr
             return wrapper->wrapDouble(objID, variable, getAllowedSpeed(objID));
         case VAR_SPEED_FACTOR:
             return wrapper->wrapDouble(objID, variable, getSpeedFactor(objID));
+        /////////////////////////
+        case VAR_CV_LEADER_SPEED:
+            return wrapper->wrapDouble(objID, variable, getCVLeaderSpeed(objID));    
         case VAR_SPEEDSETMODE:
             return wrapper->wrapInt(objID, variable, getSpeedMode(objID));
         case VAR_LANECHANGE_MODE:

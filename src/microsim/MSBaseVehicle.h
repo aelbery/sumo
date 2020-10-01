@@ -465,6 +465,20 @@ public:
     inline void setChosenSpeedFactor(const double factor) {
         myChosenSpeedFactor = factor;
     }
+    
+    /////////////////////////////////////////////////////
+    
+    
+    inline double getCVLeaderSpeed() const {
+        return myCVLeaderSpeed;
+    }
+
+    
+    inline void setCVLeaderSpeed(const double lspeed) {
+        myCVLeaderSpeed = lspeed;
+    }
+    
+    
 
     /// @brief Returns a device of the given type if it exists or 0
     MSVehicleDevice* getDevice(const std::type_info& type) const;
@@ -713,6 +727,11 @@ protected:
 
     /// @brief A precomputed factor by which the driver wants to be faster than the speed limit
     double myChosenSpeedFactor;
+    
+    ////////////////////////////
+    
+    double myCVLeaderSpeed=-1;
+    
 
 
     /// @name Move reminder structures

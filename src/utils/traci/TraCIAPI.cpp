@@ -2815,6 +2815,18 @@ TraCIAPI::VehicleScope::setSpeed(const std::string& vehicleID, double speed) con
     myParent.processSet(libsumo::CMD_SET_VEHICLE_VARIABLE);
 }
 
+////////////////////////////////////////////////////
+void
+TraCIAPI::VehicleScope::setCVLeaderSpeed(const std::string& vehicleID, double lspeed) const {
+    tcpip::Storage content;
+    content.writeUnsignedByte(libsumo::TYPE_DOUBLE);
+    content.writeDouble(lspeed);
+    myParent.createCommand(libsumo::CMD_SET_VEHICLE_VARIABLE, libsumo::VAR_CV_LEADER_SPEED, vehicleID, &content);
+    myParent.processSet(libsumo::CMD_SET_VEHICLE_VARIABLE);
+}
+
+
+
 void
 TraCIAPI::VehicleScope::setPreviousSpeed(const std::string& vehicleID, double prevspeed) const {
     tcpip::Storage content;

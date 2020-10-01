@@ -442,7 +442,7 @@ TraCIServerAPI_Vehicle::processSet(TraCIServer& server, tcpip::Storage& inputSto
             && variable != libsumo::VAR_VIA
             && variable != libsumo::VAR_HIGHLIGHT
             && variable != libsumo::CMD_TAXI_DISPATCH
-            && variable != libsumo::MOVE_TO_XY && variable != libsumo::VAR_PARAMETER/* && variable != libsumo::VAR_SPEED_TIME_LINE && variable != libsumo::VAR_LANE_TIME_LINE*/
+            && variable != libsumo::MOVE_TO_XY && variable != libsumo::VAR_PARAMETER && variable != libsumo::VAR_CV_LEADER_SPEED/* && variable != libsumo::VAR_SPEED_TIME_LINE && variable != libsumo::VAR_LANE_TIME_LINE*/
        ) {
         return server.writeErrorStatusCmd(libsumo::CMD_SET_VEHICLE_VARIABLE, "Change Vehicle State: unsupported variable " + toHex(variable, 2) + " specified", outputStorage);
     }
@@ -1149,6 +1149,17 @@ TraCIServerAPI_Vehicle::processSet(TraCIServer& server, tcpip::Storage& inputSto
                 libsumo::Vehicle::setSpeedFactor(id, factor);
             }
             break;
+            
+            //////////////////////////////////////
+            case libsumo::VAR_CV_LEADER_SPEED: {
+                double lspeed = 0;
+                if (!server.readTypeCheckingDouble(inputStorage, lspeed)) {
+                    return server.writeErrorStatusCmd(libsumo::CMD_SET_VEHICLE_VARIABLE, "Setting Leader speed requires a double.", outputStorage);
+                }
+                libsumo::Vehicle::setCVLeaderSpeed(id, lspeed);
+            }
+            break;
+            
             case libsumo::VAR_LINE: {
                 std::string line;
                 if (!server.readTypeCheckingString(inputStorage, line)) {

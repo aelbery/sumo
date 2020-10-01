@@ -492,6 +492,7 @@ public:
         double getLength(const std::string& typeID) const;
         double getMaxSpeed(const std::string& typeID) const;
         double getSpeedFactor(const std::string& typeID) const;
+        double getCVLeaderSpeed(const std::string& typeID) const;        
         double getSpeedDeviation(const std::string& typeID) const;
         double getAccel(const std::string& typeID) const;
         double getDecel(const std::string& typeID) const;
@@ -515,6 +516,7 @@ public:
         void setMaxSpeed(const std::string& typeID, double speed) const;
         void setVehicleClass(const std::string& typeID, const std::string& clazz) const;
         void setSpeedFactor(const std::string& typeID, double factor) const;
+        //void setCVLeaderSpeed(const std::string& typeID, double lspeed) const;
         void setSpeedDeviation(const std::string& typeID, double deviation) const;
         void setEmissionClass(const std::string& typeID, const std::string& clazz) const;
         void setShapeClass(const std::string& typeID, const std::string& shapeClass) const;
@@ -689,6 +691,7 @@ public:
         void setShapeClass(const std::string& vehicleID, const std::string& clazz) const;
         void setEmissionClass(const std::string& vehicleID, const std::string& clazz) const;
         void setSpeedFactor(const std::string& vehicleID, double factor) const;
+        void setCVLeaderSpeed(const std::string& vehicleID, double lspeed) const;
         void setMinGap(const std::string& vehicleID, double minGap) const;
         void setMaxSpeed(const std::string& vehicleID, double speed) const;
         /// @}
