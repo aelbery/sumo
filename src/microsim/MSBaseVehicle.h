@@ -476,6 +476,7 @@ public:
     
     inline void setCVLeaderSpeed(const double lspeed) {
         myCVLeaderSpeed = lspeed;
+        //std::cout << "myCVLeaderSpeed is set to: " << myCVLeaderSpeed << "\n";
     }
     
     

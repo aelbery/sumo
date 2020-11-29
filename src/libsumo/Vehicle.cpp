@@ -1707,6 +1707,12 @@ Vehicle::setSpeedFactor(const std::string& vehicleID, double factor) {
 void
 Vehicle::setCVLeaderSpeed(const std::string& vehicleID, double lspeed) {
     Helper::getVehicle(vehicleID)->setCVLeaderSpeed(lspeed);
+//    if  (vehicleID=="veh8" ){
+//		std::cout << "@ " << SIMTIME  << "   >>>>>>>>>>>>>>   setCVLeaderSpeed    = " << lspeed  << "\n";
+//
+//
+//    }
+
 }
 
 

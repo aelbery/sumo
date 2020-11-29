@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Wed Oct 28 05:19:46 2020 by Eclipse SUMO duarouter Version v1_7_0+0370-6faed99327
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/ahmed/Desktop/sumo/tools/2020-10-28-05-19-45/osm.net.xml"/>
+        <route-files value="/home/ahmed/Desktop/sumo/tools/2020-10-28-05-19-45/osm.passenger.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="routes.rou.xml"/>
+        <alternatives-output value="routes.rou.alt.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="veh_passenger" vClass="passenger"/>
+    <vehicle id="veh0" type="veh_passenger" depart="0.00" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="46.95" probability="1.00000000" edges="-31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh1" type="veh_passenger" depart="84.60" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh2" type="veh_passenger" depart="169.21" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.48" probability="1.00000000" edges="-31025534#2 -31025534#0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh3" type="veh_passenger" depart="253.81" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.54" probability="1.00000000" edges="28086080 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh4" type="veh_passenger" depart="338.41" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh5" type="veh_passenger" depart="423.01" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.54" probability="1.00000000" edges="28086080 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh6" type="veh_passenger" depart="507.62" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.54" probability="1.00000000" edges="28086080 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh7" type="veh_passenger" depart="592.22" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh8" type="veh_passenger" depart="676.82" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh9" type="veh_passenger" depart="761.43" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.54" probability="1.00000000" edges="28086080 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh10" type="veh_passenger" depart="846.03" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh11" type="veh_passenger" depart="930.63" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.48" probability="1.00000000" edges="-31025534#2 -31025534#0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh12" type="veh_passenger" depart="1015.23" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh13" type="veh_passenger" depart="1099.84" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh14" type="veh_passenger" depart="1184.44" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh15" type="veh_passenger" depart="1269.04" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh16" type="veh_passenger" depart="1353.65" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh17" type="veh_passenger" depart="1438.25" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="59.41" probability="1.00000000" edges="-31025534#2 4963604"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh18" type="veh_passenger" depart="1522.85" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh19" type="veh_passenger" depart="1607.45" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh20" type="veh_passenger" depart="1692.06" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.54" probability="1.00000000" edges="28086080 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh21" type="veh_passenger" depart="1776.66" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="46.95" probability="1.00000000" edges="-31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh22" type="veh_passenger" depart="1861.26" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh23" type="veh_passenger" depart="1945.87" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh24" type="veh_passenger" depart="2030.47" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.46" probability="1.00000000" edges="31025534#0 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh25" type="veh_passenger" depart="2115.07" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh26" type="veh_passenger" depart="2199.67" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.46" probability="1.00000000" edges="31025534#0 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh27" type="veh_passenger" depart="2284.28" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.46" probability="1.00000000" edges="31025534#0 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh28" type="veh_passenger" depart="2368.88" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh29" type="veh_passenger" depart="2453.48" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="59.41" probability="1.00000000" edges="-31025534#2 4963604"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh30" type="veh_passenger" depart="2538.09" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.48" probability="1.00000000" edges="-31025534#2 -31025534#0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh31" type="veh_passenger" depart="2622.69" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh32" type="veh_passenger" depart="2707.29" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.54" probability="1.00000000" edges="28086080 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh33" type="veh_passenger" depart="2791.89" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh34" type="veh_passenger" depart="2876.50" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh35" type="veh_passenger" depart="2961.10" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="46.95" probability="1.00000000" edges="-31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh36" type="veh_passenger" depart="3045.70" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh37" type="veh_passenger" depart="3130.31" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.48" probability="1.00000000" edges="-31025534#2 -31025534#0"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh38" type="veh_passenger" depart="3214.91" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh39" type="veh_passenger" depart="3299.51" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh40" type="veh_passenger" depart="3384.11" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="56.46" probability="1.00000000" edges="31025534#0 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh41" type="veh_passenger" depart="3468.72" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="52.58" probability="1.00000000" edges="-31025534#2 37598640"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="veh42" type="veh_passenger" depart="3553.32" departLane="best" departSpeed="max">
+        <routeDistribution last="0">
+            <route cost="54.39" probability="1.00000000" edges="373038796 31025534#2"/>
+        </routeDistribution>
+    </vehicle>
+</routes>
